@@ -12,14 +12,13 @@ import {
   Post,
   UpdateVoteInput,
   UpdateVoteMutation,
-  UpdateVoteMutationVariables,
 } from "../API";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import formatDatePosted from "../lib/formatDatePosted";
-import { API, Auth, Storage } from "aws-amplify";
+import { API, Storage } from "aws-amplify";
 import { createVote, updateVote } from "../graphql/mutations";
 import { GRAPHQL_AUTH_MODE } from "@aws-amplify/api";
 import { useUser } from "../context/AuthContext";
